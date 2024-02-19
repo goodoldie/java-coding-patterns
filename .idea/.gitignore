@@ -1,4 +1,42 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/out
+/out/
+# IntelliJ IDEA
+.idea/
+/out/
+
+# Compiled class files
+*.class
+
+# Compiled files
+*.war
+*.ear
+*.jar
+
+# Dependency directories
+target/
+
+# Eclipse specific files
+.classpath
+.project
+
+# Maven specific files
+log/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.branch
+
+# Gradle specific files
+.gradle/
+build/
+
+# Logs
+logs/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db

@@ -5,6 +5,7 @@
 # IntelliJ IDEA
 .idea/
 /out/
+*.iml
 
 # Compiled class files
 *.class

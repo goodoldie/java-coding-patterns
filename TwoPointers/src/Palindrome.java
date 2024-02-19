@@ -1,22 +1,43 @@
+import java.util.Scanner;
+
 public class Palindrome {
 
     public static boolean isPalindrome(String str){
+        //Empty String is not a palindrome
+        if(str == null || str.isEmpty())
+            return false;
+
+        //Convert to lowercase for case-insensitivity
         str = str.toLowerCase();
-        int start = 0, end = str.length() - 1;
-        for(; start < end; start++, end--){
-            if(str.charAt(start) != str.charAt(end))
+
+        int start = 0;
+        int end = str.length() - 1;
+
+        while(start < end){
+            char startChar = str.charAt(start);
+            char endChar = str.charAt(end);
+            //Skip non-alphanumeric characters
+            if(!Character.isLetterOrDigit(start)){
+                start++;
+                continue;
+            }
+            if(!Character.isLetterOrDigit(end)){
+                end--;
+                continue;
+            }
+            if(startChar != endChar)
                 return false;
         }
+
         return true;
     }
     public static void main(String[] args) {
-        String input1 = "abccba";
-        String input2 = "Bob";
-        String input3 = "Alice";
-        String input4 = "AaabbB";
-        System.out.println(input1 + " is a palindrome: " + isPalindrome(input1));
-        System.out.println(input2 + " is a palindrome: " + isPalindrome(input2));
-        System.out.println(input3 + " is a palindrome: " + isPalindrome(input3));
-        System.out.println(input4 + " is a palindrome: " + isPalindrome(input4));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the string to be checked for palindrome");
+        String input = scanner.nextLine();
+        if(isPalindrome(input))
+            System.out.println("The string is a palindrome.");
+        else
+            System.out.println("The string is not a palindrome");
     }
 }

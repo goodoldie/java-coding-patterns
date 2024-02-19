@@ -18,10 +18,6 @@
 # Dependency directories
 target/
 
-# Eclipse specific files
-.classpath
-.project
-
 # Maven specific files
 log/
 pom.xml.tag

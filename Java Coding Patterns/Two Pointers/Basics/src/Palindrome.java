@@ -12,21 +12,24 @@ public class Palindrome {
             str = str.toLowerCase();
             int start = 0;
             int end = str.length() - 1;
+            char startChar = str.charAt(start);
+            char endChar = str.charAt(end);
+
             while (start < end) {
-                char startChar = str.charAt(start);
-                char endChar = str.charAt(end);
                 //Skip non-alphanumeric characters
-                if (!Character.isLetterOrDigit(start)) {
+                if (!Character.isLetterOrDigit(startChar)) {
                     start++;
                     continue;
                 }
                 //Skip non-alphanumeric characters
-                if (!Character.isLetterOrDigit(end)) {
+                if (!Character.isLetterOrDigit(endChar)) {
                     end--;
                     continue;
                 }
                 if (startChar != endChar)
                     return false;
+                start++;
+                end--;
             }
             return true;
         } catch (NullPointerException | IndexOutOfBoundsException e){

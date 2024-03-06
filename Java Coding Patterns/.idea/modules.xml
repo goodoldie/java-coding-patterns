@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Two Pointers/Basics/Basics.iml" filepath="$PROJECT_DIR$/Two Pointers/Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Two Pointers/Fast and Slow Pointers/Fast and Slow Pointers.iml" filepath="$PROJECT_DIR$/Two Pointers/Fast and Slow Pointers/Fast and Slow Pointers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java Coding Patterns.iml" filepath="$PROJECT_DIR$/Java Coding Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Two Pointers/Two Pointers.iml" filepath="$PROJECT_DIR$/Two Pointers/Two Pointers.iml" />
     </modules>

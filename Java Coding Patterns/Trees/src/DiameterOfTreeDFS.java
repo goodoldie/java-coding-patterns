@@ -28,7 +28,6 @@ public class DiameterOfTreeDFS {
             return 0;
 
         Pair pair = diameterHelper(root);
-
         return pair.diameter;
     }
 
@@ -41,8 +40,6 @@ public class DiameterOfTreeDFS {
         binaryTree.add(8);
         binaryTree.add(7);
         binaryTree.add(9);
-        binaryTree.inOrderTraversal(binaryTree.root);
-        System.out.println();
         System.out.println("Diameter of the tree is " + diameterDFS(binaryTree.root));
     }
 }

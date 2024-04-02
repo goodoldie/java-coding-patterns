@@ -20,6 +20,7 @@ public class RotateImage {
         }
         printMatrix(matrix);
     }
+
     private static void printMatrix(int[][] matrix){
         int n = matrix.length;
         for(int i = 0; i < n; i++){
